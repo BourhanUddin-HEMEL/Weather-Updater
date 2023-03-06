@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss link goes here  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI link here  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>City Weather Updater</title>
+  </head>
+  <body>
+    <!--============ header section goes here =============== -->
+    <header></header>
+    <!--============main section goes here =============== -->
+    <main
+      class="w-full h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+    >
+      <h1 class="text-6xl font-bold pt-10 text-center text-white">
+        Current Weather Update
+      </h1>
+      <div class="flex pt-12 justify-center items-center">
+        <input
+          id="search-field"
+          type="text"
+          placeholder="Enter the City name"
+          class="input input-bordered input-success w-full max-w-xs"
+        />
+        <button id="search-btn" class="btn glass font-semibold px-8 mx-8">
+          Search
+        </button>
+      </div>
+      <div class="flex flex-col items-center justify-center pt-10">
+        <h1
+          class="text-4xl text-white font-bold font-serif"
+          id="city-name"
+        ></h1>
+        <h2 class="text-3xl font-thin"><span id="temperature"></span>&deg;C</h2>
+        <p id="weather" class="text-2xl"></p>
+      </div>
+    </main>
+    <!--============ footer section goes here =============== -->
+    <footer>
+      <footer class="footer p-10 bg-base-200 text-base-content">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered w-full pr-16"
+              />
+              <button
+                class="btn btn-primary absolute top-0 right-0 rounded-l-none"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+
+    <!-- custom js file goes here  -->
+    <script src="js/apps.js"></script>
+  </body>
+</html>
